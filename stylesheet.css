@@ -1,0 +1,249 @@
+body{
+    margin: 0%;
+    font-family: "Lexend Deca";
+}
+
+
+.lexend-deca-<uniquifier> {
+  font-family: "Lexend Deca";
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style : bold;
+}
+.maintopbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+}
+
+.bundle{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Lexend Deca";
+    color: red;
+
+}
+
+.depot{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Lexend Deca";
+    color: white;
+}
+
+
+.left{
+    float: left;
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.center{
+    border: none;
+    border-radius: 20px;
+    flex: 1;
+    align-items: center;
+    display: flex;
+}
+    
+   
+
+.center input{
+    border:2px solid black;
+    border-radius: 20px;
+    padding: 5px 30px;
+}
+
+.right{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    
+}
+
+.coloricon{
+     width: 35px;
+     filter: grayscale(100%);
+     cursor: pointer;
+}
+
+:hover.coloricon{
+    filter: none;
+}
+
+.cart{
+    width: 29px;
+    cursor: pointer;
+    
+}
+
+:hover.cart{
+  filter: brightness(5%);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0px;
+    background-color: #ce2b49;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Lexend Deca";
+}
+
+nav li {
+    display: inline-block;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+.background-of-header{
+    background-image: url('images/header\ background.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8; /* Adjust the opacity if desired */
+   height: 550px;
+   width: 1536px;
+
+}
+
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.button1{
+    background-color: #ce2b49;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Lexend Deca";
+    background-color:transparent;
+    border: none;
+    color:black;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 60px;
+    border: 2px black solid;
+   
+}
+
+.button1:hover{
+    animation: glowing 1300ms infinite;
+    color: white;
+}
+
+
+@keyframes glowing {
+    0% { background-color: #fb11d8; box-shadow: 0 0 5px #cd14da; }
+    50% { background-color: #d315e4; box-shadow: 0 0 20px #ad13be; }
+    100% { background-color: #980d98; box-shadow: 0 0 5px #7f0996; }
+}
+
+.box{
+    width: 198px;
+    height: 200px;
+    box-shadow: 2px;
+    margin: 50px;
+    display: inline-block;
+    font-family: "Lexend Deca";
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.cbox{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    box-shadow: 2px;
+    margin: 50px;
+    display: inline-block;
+    font-family: "Lexend Deca";
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+
+footer{
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Lexend Deca";
+  
+
+.fbtn{
+    padding: 20px;
+    background-color: #f9f5f900;
+   border: 1px solid black;
+   position: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+ 
+
+}
+
+
+.fbutton{
+  border-radius: 12px;
+ 
+}
+
+
+.aboutcompany{
+    border: 1px solid black;
+  width: 420px;
+  height: 350px;
+  margin: 0px;
+  font-size: larger;
+  font-family: 'Lexend Deca';
+  cursor: pointer;
+}
+
+
+.emailform{
+    border: 1px solid black;
+  width: 420px;
+  height: 350px;
+  margin: 0px;
+}
+
+
+
+
+.container {
+    padding: 20px;
+    background-color: rgb(14, 9, 9);
+    display: flex;
+    justify-content: space-around;
+    font-family: "Lexend Deca";
+    border: 1px solid black;
+}
+
+    
+   
+.product-image{
+    width: 10px;
+    height: 10px;
+
+}
+.product-info {
+    width: 50%;
+}
