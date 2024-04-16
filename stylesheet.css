@@ -16,25 +16,28 @@ body{
 
 .navbar ul{
     overflow: auto;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .navbar li{
-    float: left;
     list-style: none;
     color: white;
-    margin: 13px 20px;
+    padding: 13px 20px;
 }
 
 .navbar li a{
     padding:3px 3px ;
     text-decoration: none;
-    
 }
 
 .search{
     padding:12px ;
     color: whitesmoke;
-    float: right;
+    order: 1;
 }
 
 .navbar input{
@@ -43,9 +46,16 @@ body{
     padding: 3px 4px;
 }
 
-.button1:hover{
-    animation: glowing 1300ms infinite;
-    color: white;
+@media (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+    .navbar li {
+        text-align: center;
+    }
+    .search {
+        order: 0;
+    }
 }
 
 
