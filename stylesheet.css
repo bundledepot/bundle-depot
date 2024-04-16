@@ -3,7 +3,6 @@ body{
     font-family: "Lexend Deca";
 }
 
-
 .lexend-deca-<uniquifier> {
   font-family: "Lexend Deca";
   font-optical-sizing: auto;
@@ -49,8 +48,6 @@ body{
     align-items: center;
     display: flex;
 }
-    
-   
 
 .center input{
     border:2px solid black;
@@ -139,8 +136,6 @@ nav a:hover {
     width: 100%;
 }
 
-  
-
 .background-of-header{
     background-image: url('images/header\ background.jpg'); /* Replace with your image URL */
     background-size: cover;
@@ -161,7 +156,7 @@ nav a:hover {
     background-color: #ce2b49;
     font-size: 25px;
     font-weight: bold;
-    font-family: "Lexend Deca";
+    font-family:"Lexend Deca";
     background-color:transparent;
     border: none;
     color:black;
@@ -169,7 +164,7 @@ nav a:hover {
     cursor: pointer;
     border-radius: 60px;
     border: 2px black solid;
-   
+
 }
 
 .button1:hover{
@@ -219,7 +214,6 @@ footer{
 }
 
 .fbtn{
-   
     width: 500px;
     height: 350px;
     margin: 0px;
@@ -228,21 +222,15 @@ footer{
     cursor: pointer;
 }
 
-
-
-
-
 .aboutcompany{
-    
-  width: 500px;
-  height: 350px;
-  margin: 0px;
-  font-size: larger;
-  font-family: 'Lexend Deca';
-  cursor: pointer;
+    width: 500px;
+    height: 350px;
+    margin: 0px;
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'Lexend Deca';
+    cursor: pointer;
 }
-
-
 
 .cards{
     width: 20%;
@@ -250,7 +238,7 @@ footer{
     border-radius: 5px;
     margin: 40px;
     display: inline-block;
-   
+
 }
 
 .cards:hover{
@@ -287,7 +275,7 @@ footer{
     cursor: pointer;
     border-radius: 60px;
     border: 2px black solid;
-    
+
 }
 
 .buy:hover{
