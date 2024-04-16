@@ -9,162 +9,38 @@ body{
   font-weight: 600;
   font-style : bold;
 }
-.maintopbar{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    background-color: gray;
+.navbar{
+    background-color: red; 
+    border-radius: 30px;
 }
 
-.bundle{
-    font-size: 25px;
-    font-weight: bold;
-    font-family: "Lexend Deca";
-    color: red;
-
+.navbar ul{
+    overflow: auto;
 }
 
-.depot{
-    font-size: 25px;
-    font-weight: bold;
-    font-family: "Lexend Deca";
-    color: white;
-}
-
-
-.left{
+.navbar li{
     float: left;
-    display: flex;
-    align-items: left;
-    justify-content: flex-start;
-    cursor: pointer;
+    list-style: none;
+    color: white;
+    margin: 13px 20px;
 }
 
-.center{
-    border: none;
-    border-radius: 20px;
-    flex: 1;
-    align-items: center;
-    display: flex;
-}
-
-.center input{
-    border:2px solid black;
-    border-radius: 20px;
-    padding: 5px 30px;
-}
-
-.right{
-     
-    position: relative;
-    display: block;
-    height: 100%;
-    padding-right: 5px;
-    right: 0;
-    overflow: hidden;
-}
-
-.coloricon{
-     width: 35px;
-     filter: grayscale(100%);
-     cursor: pointer;
-}
-
-:hover.coloricon{
-    filter: none;
-}
-
-.cart{
-    width: 29px;
-    cursor: pointer;
+.navbar li a{
+    padding:3px 3px ;
+    text-decoration: none;
     
 }
 
-:hover.cart{
-  filter: brightness(5%);
+.search{
+    padding:12px ;
+    color: whitesmoke;
+    float: right;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 20px;
-    margin: 0px;
-    background-color: #ce2b49;
-    display: flex;
-    justify-content: space-around;
-    font-family: "Lexend Deca";
-}
-
-nav li {
-    display: inline-block;
-    justify-content: center;
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    padding: 0 30px;
-    text-decoration:none ;
-    display: flex;
-    align-items: center ;
-}
-
-nav a:hover {
-    color: rgb(3, 3, 3);
-}
-
-.sidebar{
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    z-index: 999 ;
-    background-color: red;
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-
-}
-.sidebar li{
-    width: 100%;
-}
-
-.sidebar{
-    width: 100%;
-}
-
-.background-of-header{
-    background-image: url('images/header\ background.jpg'); /* Replace with your image URL */
-    background-size: cover;
-    background-position: center;
-    opacity: 0.8; /* Adjust the opacity if desired */
-   height: 550px;
-   width: 1536px;
-
-}
-
-.header-content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.button1{
-    background-color: #ce2b49;
-    font-size: 25px;
-    font-weight: bold;
-    font-family:"Lexend Deca";
-    background-color:transparent;
-    border: none;
-    color:black;
-    padding: 5px 15px;
-    cursor: pointer;
-    border-radius: 60px;
-    border: 2px black solid;
-
+.navbar input{
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 3px 4px;
 }
 
 .button1:hover{
