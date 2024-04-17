@@ -1,3 +1,5 @@
+
+
 body{
     margin: 0%;
     font-family: "Lexend Deca";
@@ -9,9 +11,15 @@ body{
   font-weight: 600;
   font-style : bold;
 }
+
 .navbar{
-    background-color: red; 
-    border-radius: 30px;
+    background-color: white; 
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border: 3px solid black;
+    border-bottom: none;
+    position: sticky;
+    top: 0; 
 }
 
 .navbar ul{
@@ -25,8 +33,8 @@ body{
 
 .navbar li{
     list-style: none;
-    color: white;
-    padding: 13px 20px;
+    color: black;
+    padding: 13px ;
 }
 
 .navbar li a{
@@ -37,7 +45,7 @@ body{
 .search{
     padding:12px ;
     color: whitesmoke;
-    order: 1;
+    
 }
 
 .navbar input{
@@ -59,17 +67,77 @@ body{
 }
 
 
+
+/* Default styles for all screens */
+.icons {
+    padding: 3px 4px;
+    justify-content: space-around;
+    cursor: pointer;
+  }
+  
+  /* Styles for screens wider than 768px */
+  @media (min-width: 768px) {
+    .icons {
+      /* Add additional styles here for larger screens */
+    }
+  }
+  
+  /* Styles for screens narrower than 768px */
+  @media (max-width: 768px) {
+    .icons {
+      /* Add additional styles here for smaller screens */
+    }
+  }
+  
+
+
+
+
 @keyframes glowing {
     0% { background-color: #fb11d8; box-shadow: 0 0 5px #cd14da; }
     50% { background-color: #d315e4; box-shadow: 0 0 20px #ad13be; }
     100% { background-color: #980d98; box-shadow: 0 0 5px #7f0996; }
 }
 
+.navbar2{
+    background-color: white; 
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: 3px solid black;
+    border-top: none;
+    position: static;
+    top: 0;
+    z-index: 100;
+    
+    
+}
+
+.navbar2 ul{
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.navbar2 li{
+    list-style: none;
+    color: black;
+    padding: 13px ;
+}
+
+.navbar li a{
+    padding:3px 3px ;
+    text-decoration: none;
+}
+
+
 .box{
-    width: 198px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     box-shadow: 2px;
-    margin: 50px;
+    margin: 30px;
     display: inline-block;
     font-family: "Lexend Deca";
     font-weight: bold;
@@ -99,6 +167,30 @@ footer{
     font-family: "Lexend Deca";
 }
 
+
+/* Footer styles for all screens */
+footer {
+    /* Default styles for the footer */
+    .fbtn,
+    .aboutcompany {
+      /* Default styles for .fbtn and .aboutcompany elements */
+    }
+  }
+  
+  /* Adjust styles for smaller screens (example: max-width: 768px) */
+  @media (max-width: 768px) {
+    footer {
+      .fbtn,
+      .aboutcompany {
+        /* Styles for .fbtn and .aboutcompany on smaller screens */
+        flex-direction: column;  /* Stack elements vertically */
+        align-items: center;    /* Center elements horizontally */
+        text-align: center;     /* Center text within elements */
+      }
+    }
+  }
+  
+
 .fbtn{
     width: 500px;
     height: 350px;
@@ -118,12 +210,19 @@ footer{
     cursor: pointer;
 }
 
+
+.main{
+
+}
+
+
 .cards{
-    width: 20%;
+    width: 400px;
     background-color: aqua;
     border-radius: 5px;
-    margin: 40px;
+    margin: 20px 20px;
     display: inline-block;
+    margin left: 50px;
 
 }
 
@@ -152,7 +251,7 @@ footer{
 .buy{
     margin-top: 10px;
     margin-bottom: 5px;
-    font-size: 25px;
+    font-size:  18px;
     font-weight: bold;
     font-family: "Lexend Deca";
     background-color:transparent;
