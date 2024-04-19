@@ -2,14 +2,14 @@
 
 body{
     margin: 0%;
-    font-family: "Lexend Deca";
+    font-family:"Lexend Deca";
 }
 
 .lexend-deca-<uniquifier> {
   font-family: "Lexend Deca";
   font-optical-sizing: auto;
-  font-weight: 600;
-  font-style : bold;
+  font-weight : 600;
+  font-style: bold;
 }
 
 .navbar{
@@ -29,6 +29,8 @@ body{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    
+    
 }
 
 .navbar li{
@@ -108,7 +110,8 @@ body{
     position: sticky;
     top: 0;
     z-index: 10;
-    text-decoration:none;
+    width: 100%;
+    text-decoration: none;
     
     
 }
@@ -133,18 +136,6 @@ body{
     text-decoration: none;
 }
 
-
-.box{
-    width: 150px;
-    height: 150px;
-    box-shadow: 2px;
-    margin: 30px;
-    display: inline-block;
-    font-family: "Lexend Deca";
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 15px;
-}
 
 .dropdown {
     float: left;
@@ -199,10 +190,93 @@ body{
     display: block;
 }
 
-.dropbtn{
-   
-}
+.wrapper {
+    display: flex;
+    max-width: 1200px;
+    position: relative;
+  }
+  
+  .wrapper i {
+    top: 50%;
+  height:45px;
+  width: 45px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 45px;
+  background: white;
+  border-radius: 50% ;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;/* ...existing styles... */
+  }
 
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.9);
+  }
+  .wrapper i:hover{
+    background: #cb1d1d;
+  }
+  .wrapper i:first-child{
+    left: -22px;
+    display: none;
+  }
+  .wrapper i:last-child{
+    right: -22px;
+  }
+  
+  .wrapper .carousel {
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+  }
+  
+  .carousel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+  }
+  
+  .carousel.dragging .cards {
+    pointer-events: none;
+  }
+  
+  .carousel .cards {
+    height: 400px;
+    user-select: none;
+    margin-left: 14px;
+    width: calc(100% / 3);
+  }
+  
+  .carousel .cards:first-child {
+    margin-left: 0px;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .carousel .cards {
+      width: calc(100% / 2);
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .carousel .cards {
+      width: 100%;
+    }
+  }
+  
+.box{
+    width: 150px;
+    height: 150px;
+    box-shadow: 2px;
+    margin: 30px;
+    display: inline-block;
+    font-family: "Lexend Deca";
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+}
 
 .cbox{
     width: 200px;
@@ -215,61 +289,45 @@ body{
     font-weight: bold;
     cursor: pointer;
     border-radius: 15px;
-    text-decoration:none;
 }
 
 
-footer{
-    padding:25px;
-    background-color: rgb(207, 255, 32);
+
+  footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+   
+   
+  }
+  
+  .footer-container {
     display: flex;
-    justify-content: space-around;
-    font-family: "Lexend Deca";
-    text-decoration:none;
-}
-
-
-/* Footer styles for all screens */
-footer {
-    /* Default styles for the footer */
-    .fbtn,
-    .aboutcompany {
-      /* Default styles for .fbtn and .aboutcompany elements */
-    }
+    flex-direction: column-reverse;
+    align-items: center;
+    font-family:"Lexend Deca" ;
+    font-size: medium;
+    margin-left: 15px;
+    margin-right: 15px;
   }
   
-  /* Adjust styles for smaller screens (example: max-width: 768px) */
-  @media (max-width: 768px) {
-    footer {
-      .fbtn,
-      .aboutcompany {
-        /* Styles for .fbtn and .aboutcompany on smaller screens */
-        flex-direction: column;  /* Stack elements vertically */
-        align-items: center;    /* Center elements horizontally */
-        text-align: center;     /* Center text within elements */
-      }
+  .fbtn p, .aboutcompany a {
+    margin: 0 0 10px 0;
+  }
+  
+  .aboutcompany {
+    margin: 20px 0;
+  margin-left:20px ;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .footer-container {
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
   
 
-.fbtn{
-    width: 500px;
-    height: 350px;
-    margin: 0px;
-    font-size: larger;
-    font-family: 'Lexend Deca';
-    cursor: pointer;
-}
-
-.aboutcompany{
-    width: 500px;
-    height: 350px;
-    margin: 0px;
-    font-size: larger;
-    font-weight: bold;
-    font-family: 'Lexend Deca';
-    cursor: pointer;
-}
 
 
 .main{
